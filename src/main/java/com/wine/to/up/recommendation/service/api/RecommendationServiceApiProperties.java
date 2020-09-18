@@ -1,4 +1,4 @@
-package com.wine.to.up.notification.service.api;
+package com.wine.to.up.recommendation.service.api;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,14 +12,15 @@ import org.springframework.stereotype.Component;
  */
 @SuppressWarnings("SpringPropertySource")
 @PropertySources({
-        @PropertySource("classpath:application-notification-service-api.properties"),
-        @PropertySource("classpath:application-notification-service-api-${spring.profiles.active:local}.properties")
+        @PropertySource("classpath:application-recommendation-service-api.properties"),
+        @PropertySource("classpath:application-recommendation-service-api-${spring.profiles.active:local}.properties")
 })
-@ConfigurationProperties(prefix = "notification.service.api")
+@ConfigurationProperties(prefix = "recommendation.service.api")
 @Setter
 @Component
 @Getter
-public class NotificationServiceApiProperties {
+public class RecommendationServiceApiProperties {
     private String messageSentEventsTopicName;
+
     private String host;
 }

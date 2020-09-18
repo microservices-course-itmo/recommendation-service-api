@@ -8,7 +8,7 @@
  * conditions of the License Agreement under which it is provided by or on behalf
  * of Andrsuh INC.
  */
-package com.wine.to.up.notification.service.api.dto;
+package com.wine.to.up.recommendation.service.api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,16 +18,18 @@ import lombok.Setter;
 import javax.validation.constraints.NotNull;
 import java.util.Map;
 
+
 /**
- * Message in format of notification service
+ * Message in format of recommendation service
  */
 @NoArgsConstructor
 @Getter
 @Setter
 @AllArgsConstructor
-public class NotificationServiceMessage {
+public class RecommendationServiceMessage {
     @NotNull
     private Map<String, byte[]> headers;
+
     @NotNull
     private String message;
 }

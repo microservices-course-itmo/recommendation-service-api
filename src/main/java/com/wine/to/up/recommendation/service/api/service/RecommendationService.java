@@ -8,16 +8,17 @@
  * conditions of the License Agreement under which it is provided by or on behalf
  * of Andrsuh INC.
  */
-package com.wine.to.up.notification.service.api.service;
+package com.wine.to.up.recommendation.service.api.service;
 
-import com.wine.to.up.notification.service.api.dto.NotificationServiceMessage;
+import com.wine.to.up.recommendation.service.api.dto.RecommendationServiceMessage;
 
 import java.util.List;
+
 
 /**
  * Defines an interface for communicating with kafka
  */
-public interface NotificationService {
+public interface RecommendationService {
     /**
      * Sends message to kafka topic
      *
@@ -30,7 +31,7 @@ public interface NotificationService {
      *
      * @param messageWithHeaders message with headers
      */
-    void sendMessageWithHeaders(NotificationServiceMessage messageWithHeaders);
+    void sendMessageWithHeaders(RecommendationServiceMessage messageWithHeaders);
 
     /**
      * Get district message content from DB

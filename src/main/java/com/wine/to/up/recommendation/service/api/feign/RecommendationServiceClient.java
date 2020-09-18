@@ -8,24 +8,24 @@
  * conditions of the License Agreement under which it is provided by or on behalf
  * of Andrsuh INC.
  */
-package com.wine.to.up.notification.service.api.feign;
+package com.wine.to.up.recommendation.service.api.feign;
 
-import com.wine.to.up.notification.service.api.dto.NotificationServiceMessage;
-import com.wine.to.up.notification.service.api.service.NotificationService;
+import com.wine.to.up.recommendation.service.api.dto.RecommendationServiceMessage;
+import com.wine.to.up.recommendation.service.api.service.RecommendationService;
 import feign.Headers;
 import feign.RequestLine;
 
 import java.util.List;
+
 
 /**
  * Defines the parameters and paths of REST API of Kafka Service
  * <p>
  * Java feign client will be generated based on this declaration.
  * <p>
- * Docker swarm's load balancing will resolve
- * the name of the service and request will be redirected to the particular instance.
+ * Docker swarm's load balancing will resolve the name of the service and request will be redirected to the particular instance.
  */
-public interface NotificationServiceClient extends NotificationService {
+public interface RecommendationServiceClient extends RecommendationService {
     /**
      * {@inheritDoc}
      */
@@ -38,7 +38,7 @@ public interface NotificationServiceClient extends NotificationService {
      */
     @RequestLine(value = "POST /kafka/send/headers")
     @Headers("Content-Type: application/json")
-    void sendMessageWithHeaders(NotificationServiceMessage messageWithHeaders);
+    void sendMessageWithHeaders(RecommendationServiceMessage messageWithHeaders);
 
     /**
      * {@inheritDoc}

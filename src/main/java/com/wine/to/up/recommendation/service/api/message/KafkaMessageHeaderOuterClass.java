@@ -4,143 +4,131 @@
 package com.wine.to.up.recommendation.service.api.message;
 
 public final class KafkaMessageHeaderOuterClass {
-    private KafkaMessageHeaderOuterClass() {
-    }
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_KafkaMessageHeader_descriptor;
 
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistryLite registry) {
-    }
-
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistry registry) {
-        registerAllExtensions(
-                (com.google.protobuf.ExtensionRegistryLite) registry);
-    }
-
-    private static final com.google.protobuf.Descriptors.Descriptor
-            internal_static_KafkaMessageHeader_descriptor;
-
-    private static final
+  private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internal_static_KafkaMessageHeader_fieldAccessorTable;
+      internal_static_KafkaMessageHeader_fieldAccessorTable;
 
-    private static com.google.protobuf.Descriptors.FileDescriptor
-            descriptor;
+  private static  com.google.protobuf.Descriptors.FileDescriptor
+      descriptor;
 
-    static {
-        java.lang.String[] descriptorData = {
-                "\n\032kafka_message_header.proto\"0\n\022KafkaMes" +
-                        "sageHeader\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\014B1" +
-                        "\n/com.wine.to.up.recommendation.service.ap" +
-                        "i.messageb\006proto3"
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\032kafka_message_header.proto\"0\n\022KafkaMes" +
+      "sageHeader\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(\014B3" +
+      "\n1com.wine.to.up.recommendation.service." +
+      "api.messageb\006proto3"
+    };
+    com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
+        new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
+          public com.google.protobuf.ExtensionRegistry assignDescriptors(
+              com.google.protobuf.Descriptors.FileDescriptor root) {
+            descriptor = root;
+            return null;
+          }
         };
-        com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
-                new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
-                    public com.google.protobuf.ExtensionRegistry assignDescriptors(
-                            com.google.protobuf.Descriptors.FileDescriptor root) {
-                        descriptor = root;
-                        return null;
-                    }
-                };
-        com.google.protobuf.Descriptors.FileDescriptor
-                .internalBuildGeneratedFileFrom(descriptorData,
-                        new com.google.protobuf.Descriptors.FileDescriptor[] {
-                        }, assigner);
-        internal_static_KafkaMessageHeader_descriptor =
-                getDescriptor().getMessageTypes().get(0);
-        internal_static_KafkaMessageHeader_fieldAccessorTable = new
-                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-                internal_static_KafkaMessageHeader_descriptor,
-                new java.lang.String[] {"Key", "Value",});
-    }
+    com.google.protobuf.Descriptors.FileDescriptor
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        }, assigner);
+    internal_static_KafkaMessageHeader_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_KafkaMessageHeader_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_KafkaMessageHeader_descriptor,
+        new java.lang.String[] { "Key", "Value", });
+  }
+  private KafkaMessageHeaderOuterClass() {}
 
-    public static com.google.protobuf.Descriptors.FileDescriptor
-    getDescriptor() {
-        return descriptor;
-    }
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
 
-    public interface KafkaMessageHeaderOrBuilder extends
-            // @@protoc_insertion_point(interface_extends:KafkaMessageHeader)
-            com.google.protobuf.MessageOrBuilder {
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
+  }
 
-        /**
-         * <code>optional string key = 1;</code>
-         */
-        java.lang.String getKey();
-
-        /**
-         * <code>optional string key = 1;</code>
-         */
-        com.google.protobuf.ByteString
-        getKeyBytes();
-
-        /**
-         * <code>optional bytes value = 2;</code>
-         */
-        com.google.protobuf.ByteString getValue();
-    }
+  public static com.google.protobuf.Descriptors.FileDescriptor
+      getDescriptor() {
+    return descriptor;
+  }
+  public interface KafkaMessageHeaderOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:KafkaMessageHeader)
+      com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * this class is treated by Protobuf.
-     * During "generate-sources" phase (install includes it) java classes are generates (see folder "target/")
-     * </pre>
-     * <p>
-     * Protobuf type {@code KafkaMessageHeader}
+     * <code>optional string key = 1;</code>
      */
-    public static final class KafkaMessageHeader extends
-            com.google.protobuf.GeneratedMessageV3 implements
-            // @@protoc_insertion_point(message_implements:KafkaMessageHeader)
-            KafkaMessageHeaderOrBuilder {
-        // Use KafkaMessageHeader.newBuilder() to construct.
-        private KafkaMessageHeader(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-            super(builder);
-        }
+    java.lang.String getKey();
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
 
-        private KafkaMessageHeader() {
-            key_ = "";
-            value_ = com.google.protobuf.ByteString.EMPTY;
-        }
+    /**
+     * <code>optional bytes value = 2;</code>
+     */
+    com.google.protobuf.ByteString getValue();
+  }
 
-        @java.lang.Override
-        public final com.google.protobuf.UnknownFieldSet
-        getUnknownFields() {
-            return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
-        }
+  /**
+   * <pre>
+   *this class is treated by Protobuf.
+   *During "generate-sources" phase (install includes it) java classes are generates (see folder "target/")
+   * </pre>
+   *
+   * Protobuf type {@code KafkaMessageHeader}
+   */
+  public  static final class KafkaMessageHeader extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:KafkaMessageHeader)
+      KafkaMessageHeaderOrBuilder {
+    public static final int KEY_FIELD_NUMBER = 1;
 
-        public static final int KEY_FIELD_NUMBER = 1;
+    private static final long serialVersionUID = 0L;
 
-        // @@protoc_insertion_point(class_scope:KafkaMessageHeader)
-        private static final com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:KafkaMessageHeader)
+    private static final com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader DEFAULT_INSTANCE;
 
-        private static final long serialVersionUID = 0L;
+    private static final com.google.protobuf.Parser<KafkaMessageHeader>
+        PARSER = new com.google.protobuf.AbstractParser<KafkaMessageHeader>() {
+      public KafkaMessageHeader parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+          return new KafkaMessageHeader(input, extensionRegistry);
+      }
+    };
 
-        private static final com.google.protobuf.Parser<KafkaMessageHeader>
-                PARSER = new com.google.protobuf.AbstractParser<KafkaMessageHeader>() {
-            public KafkaMessageHeader parsePartialFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws com.google.protobuf.InvalidProtocolBufferException {
-                return new KafkaMessageHeader(input, extensionRegistry);
-            }
-        };
+    static {
+      DEFAULT_INSTANCE = new com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader();
+    }
 
-        static {
-            DEFAULT_INSTANCE = new com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader();
-        }
+    private volatile java.lang.Object key_;
 
-        private volatile java.lang.Object key_;
-
-        private KafkaMessageHeader(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            this();
-            int mutable_bitField0_ = 0;
-            try {
-                boolean done = false;
-                while (!done) {
-                    int tag = input.readTag();
+    // Use KafkaMessageHeader.newBuilder() to construct.
+    private KafkaMessageHeader(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private KafkaMessageHeader() {
+      key_ = "";
+      value_ = com.google.protobuf.ByteString.EMPTY;
+    }
+    private KafkaMessageHeader(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      int mutable_bitField0_ = 0;
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
           switch (tag) {
             case 0:
               done = true;
@@ -165,13 +153,18 @@ public final class KafkaMessageHeaderOuterClass {
           }
         }
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                throw e.setUnfinishedMessage(this);
+        throw e.setUnfinishedMessage(this);
       } catch (java.io.IOException e) {
-                throw new com.google.protobuf.InvalidProtocolBufferException(
-                        e).setUnfinishedMessage(this);
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
       } finally {
-                makeExtensionsImmutable();
+        makeExtensionsImmutable();
       }
+    }
+
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_descriptor;
     }
 
     public static final int VALUE_FIELD_NUMBER = 2;
@@ -184,446 +177,445 @@ public final class KafkaMessageHeaderOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+
+    public static Builder newBuilder(com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+
+    public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    public static com.google.protobuf.Parser<KafkaMessageHeader> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return com.google.protobuf.UnknownFieldSet.getDefaultInstance();
+    }
+
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        key_ = s;
+        return s;
+      }
+    }
+
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b =
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
       memoizedIsInitialized = 1;
-        return true;
+      return true;
     }
 
-        public void writeTo(com.google.protobuf.CodedOutputStream output)
-                throws java.io.IOException {
-            if (!getKeyBytes().isEmpty()) {
-                com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
-            }
-            if (!value_.isEmpty()) {
-                output.writeBytes(2, value_);
-            }
-        }
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getKeyBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, key_);
+      }
+      if (!value_.isEmpty()) {
+        output.writeBytes(2, value_);
+      }
+    }
 
-        public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-            return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_descriptor;
-        }
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
-                com.google.protobuf.ByteString data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+      size = 0;
+      if (!getKeyBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
+      }
+      if (!value_.isEmpty()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, value_);
+      }
+      memoizedSize = size;
+      return size;
+    }
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
-                com.google.protobuf.ByteString data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data, extensionRegistry);
-        }
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader)) {
+        return super.equals(obj);
+      }
+      com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader other = (com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader) obj;
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(byte[] data)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data);
-        }
+      boolean result = true;
+      result = result && getKey()
+          .equals(other.getKey());
+      result = result && getValue()
+          .equals(other.getValue());
+      return result;
+    }
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
-                byte[] data,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws com.google.protobuf.InvalidProtocolBufferException {
-            return PARSER.parseFrom(data, extensionRegistry);
-        }
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptorForType().hashCode();
+      hash = (37 * hash) + KEY_FIELD_NUMBER;
+      hash = (53 * hash) + getKey().hashCode();
+      hash = (37 * hash) + VALUE_FIELD_NUMBER;
+      hash = (53 * hash) + getValue().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(java.io.InputStream input)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input);
-        }
+    public Builder newBuilderForType() { return newBuilder(); }
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input, extensionRegistry);
-        }
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseDelimitedFrom(java.io.InputStream input)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseDelimitedWithIOException(PARSER, input);
-        }
+    @java.lang.Override
+    public com.google.protobuf.Parser<KafkaMessageHeader> getParserForType() {
+      return PARSER;
+    }
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseDelimitedFrom(
-                java.io.InputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-        }
+    public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
 
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
-                com.google.protobuf.CodedInputStream input)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input);
-        }
-
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parseFrom(
-                com.google.protobuf.CodedInputStream input,
-                com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                throws java.io.IOException {
-            return com.google.protobuf.GeneratedMessageV3
-                    .parseWithIOException(PARSER, input, extensionRegistry);
-        }
-
-        public static Builder newBuilder() {
-            return DEFAULT_INSTANCE.toBuilder();
-        }
-
-        public static Builder newBuilder(com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader prototype) {
-            return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-        }
-
-        public static com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader getDefaultInstance() {
-            return DEFAULT_INSTANCE;
-        }
-
-        public static com.google.protobuf.Parser<KafkaMessageHeader> parser() {
-            return PARSER;
-        }
-
-        /**
-         * <code>optional string key = 1;</code>
-         */
-        public java.lang.String getKey() {
-            java.lang.Object ref = key_;
-            if (ref instanceof java.lang.String) {
-                return (java.lang.String) ref;
-            } else {
-                com.google.protobuf.ByteString bs =
-                        (com.google.protobuf.ByteString) ref;
-                java.lang.String s = bs.toStringUtf8();
-                key_ = s;
-                return s;
-            }
-        }
-
-        /**
-         * <code>optional string key = 1;</code>
-         */
-        public com.google.protobuf.ByteString
-        getKeyBytes() {
-            java.lang.Object ref = key_;
-            if (ref instanceof java.lang.String) {
-                com.google.protobuf.ByteString b =
-                        com.google.protobuf.ByteString.copyFromUtf8(
-                                (java.lang.String) ref);
-                key_ = b;
-                return b;
-            } else {
-                return (com.google.protobuf.ByteString) ref;
-            }
-        }
-
-        public int getSerializedSize() {
-            int size = memoizedSize;
-            if (size != -1) {
-                return size;
-            }
-
-            size = 0;
-            if (!getKeyBytes().isEmpty()) {
-                size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, key_);
-            }
-            if (!value_.isEmpty()) {
-                size += com.google.protobuf.CodedOutputStream
-                        .computeBytesSize(2, value_);
-            }
-            memoizedSize = size;
-            return size;
-        }
-
-        @java.lang.Override
-        public int hashCode() {
-            if (memoizedHashCode != 0) {
-                return memoizedHashCode;
-            }
-            int hash = 41;
-            hash = (19 * hash) + getDescriptorForType().hashCode();
-            hash = (37 * hash) + KEY_FIELD_NUMBER;
-            hash = (53 * hash) + getKey().hashCode();
-            hash = (37 * hash) + VALUE_FIELD_NUMBER;
-            hash = (53 * hash) + getValue().hashCode();
-            hash = (29 * hash) + unknownFields.hashCode();
-            memoizedHashCode = hash;
-            return hash;
-        }
-
-        public Builder newBuilderForType() {
-            return newBuilder();
-        }
-
-        public Builder toBuilder() {
-            return this == DEFAULT_INSTANCE
-                    ? new Builder() : new Builder().mergeFrom(this);
-        }
-
-        @java.lang.Override
-        public boolean equals(final java.lang.Object obj) {
-            if (obj == this) {
-                return true;
-            }
-            if (!(obj instanceof com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader)) {
-                return super.equals(obj);
-            }
-            com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader other = (com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader) obj;
-
-            boolean result = true;
-            result = result && getKey()
-                    .equals(other.getKey());
-            result = result && getValue()
-                    .equals(other.getValue());
-            return result;
-        }
-
-        public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader getDefaultInstanceForType() {
-            return DEFAULT_INSTANCE;
-        }
-
-        @java.lang.Override
-        public com.google.protobuf.Parser<KafkaMessageHeader> getParserForType() {
-            return PARSER;
-        }
-
-        @java.lang.Override
-        protected Builder newBuilderForType(
-                com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-            Builder builder = new Builder(parent);
-            return builder;
-        }
-
-        protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-            return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_fieldAccessorTable
-                    .ensureFieldAccessorsInitialized(
-                            com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.class, com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.Builder.class);
+      return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.class, com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.Builder.class);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+
+    /**
+     * <pre>
+     *this class is treated by Protobuf.
+     *During "generate-sources" phase (install includes it) java classes are generates (see folder "target/")
+     * </pre>
+     *
+     * Protobuf type {@code KafkaMessageHeader}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:KafkaMessageHeader)
+        com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeaderOrBuilder {
+      private java.lang.Object key_ = "";
+
+      private com.google.protobuf.ByteString value_ = com.google.protobuf.ByteString.EMPTY;
+
+      // Construct using com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_descriptor;
+      }
+
+      public Builder clear() {
+        super.clear();
+        key_ = "";
+
+        value_ = com.google.protobuf.ByteString.EMPTY;
+
+        return this;
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_descriptor;
+      }
+
+      public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader getDefaultInstanceForType() {
+        return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.getDefaultInstance();
+      }
+
+      public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader build() {
+        com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
         }
+        return result;
+      }
 
-        /**
-         * <pre>
-         * this class is treated by Protobuf.
-         * During "generate-sources" phase (install includes it) java classes are generates (see folder "target/")
-         * </pre>
-         * <p>
-         * Protobuf type {@code KafkaMessageHeader}
-         */
-        public static final class Builder extends
-                com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-                // @@protoc_insertion_point(builder_implements:KafkaMessageHeader)
-                com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeaderOrBuilder {
-            private java.lang.Object key_ = "";
+      public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader buildPartial() {
+        com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader result = new com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader(this);
+        result.key_ = key_;
+        result.value_ = value_;
+        onBuilt();
+        return result;
+      }
 
-            // Construct using com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.newBuilder()
-            private Builder() {
-                maybeForceBuilderInitialization();
-            }
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader) {
+          return mergeFrom((com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
 
-            private Builder(
-                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-                super(parent);
-                maybeForceBuilderInitialization();
-            }
-
-            public static final com.google.protobuf.Descriptors.Descriptor
-            getDescriptor() {
-                return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_descriptor;
-            }
-
-            public com.google.protobuf.Descriptors.Descriptor
-            getDescriptorForType() {
-                return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_descriptor;
-            }
-
-            public Builder clear() {
-                super.clear();
-                key_ = "";
-
-                value_ = com.google.protobuf.ByteString.EMPTY;
-
-                return this;
-            }
-
-            public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader getDefaultInstanceForType() {
-                return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.getDefaultInstance();
-            }
-
-            public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader build() {
-                com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader result = buildPartial();
-                if (!result.isInitialized()) {
-                    throw newUninitializedMessageException(result);
-                }
-                return result;
-            }
-
-            public com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader buildPartial() {
-                com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader result = new com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader(this);
-                result.key_ = key_;
-                result.value_ = value_;
-                onBuilt();
-                return result;
-            }
-
-            public Builder mergeFrom(com.google.protobuf.Message other) {
-                if (other instanceof com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader) {
-                    return mergeFrom((com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader) other);
-                } else {
-                    super.mergeFrom(other);
-                    return this;
-                }
-            }
-
-            public Builder clone() {
-                return (Builder) super.clone();
-            }
-
-            public Builder setField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field,
-                    Object value) {
-                return (Builder) super.setField(field, value);
-            }
-
-            public Builder clearField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field) {
-                return (Builder) super.clearField(field);
-            }
-
-            public Builder clearOneof(
-                    com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-                return (Builder) super.clearOneof(oneof);
-            }
-
-            public Builder setRepeatedField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field,
-                    int index, Object value) {
-                return (Builder) super.setRepeatedField(field, index, value);
-            }
-
-            public Builder addRepeatedField(
-                    com.google.protobuf.Descriptors.FieldDescriptor field,
-                    Object value) {
-                return (Builder) super.addRepeatedField(field, value);
-            }
-
-            public Builder mergeFrom(com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader other) {
-                if (other == com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.getDefaultInstance()) {
-                    return this;
-                }
-                if (!other.getKey().isEmpty()) {
-                    key_ = other.key_;
-                    onChanged();
-                }
-                if (other.getValue() != com.google.protobuf.ByteString.EMPTY) {
-                    setValue(other.getValue());
-                }
-                onChanged();
-                return this;
-            }
-
-            public Builder mergeFrom(
-                    com.google.protobuf.CodedInputStream input,
-                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-                    throws java.io.IOException {
-                com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parsedMessage = null;
-                try {
-                    parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-                    parsedMessage = (com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader) e.getUnfinishedMessage();
-                    throw e.unwrapIOException();
-                } finally {
-                    if (parsedMessage != null) {
-                        mergeFrom(parsedMessage);
-                    }
-                }
-                return this;
-            }
-
-            public final boolean isInitialized() {
-                return true;
-            }
-
-            /**
-             * <code>optional string key = 1;</code>
-             */
-            public java.lang.String getKey() {
-                java.lang.Object ref = key_;
-                if (!(ref instanceof java.lang.String)) {
-                    com.google.protobuf.ByteString bs =
-                            (com.google.protobuf.ByteString) ref;
-                    java.lang.String s = bs.toStringUtf8();
-                    key_ = s;
-                    return s;
-                } else {
-                    return (java.lang.String) ref;
-                }
-            }
-
-            /**
-             * <code>optional string key = 1;</code>
-             */
-            public Builder setKey(
-                    java.lang.String value) {
-                if (value == null) {
-                    throw new NullPointerException();
-                }
-
-                key_ = value;
-                onChanged();
-                return this;
-            }
-
-            /**
-             * <code>optional string key = 1;</code>
-             */
-            public com.google.protobuf.ByteString
-            getKeyBytes() {
-                java.lang.Object ref = key_;
-                if (ref instanceof String) {
-                    com.google.protobuf.ByteString b =
-                            com.google.protobuf.ByteString.copyFromUtf8(
-                                    (java.lang.String) ref);
-                    key_ = b;
-                    return b;
-                } else {
-                    return (com.google.protobuf.ByteString) ref;
-                }
-            }
-
-            /**
-             * <code>optional string key = 1;</code>
-             */
-            public Builder setKeyBytes(
-                    com.google.protobuf.ByteString value) {
-                if (value == null) {
-                    throw new NullPointerException();
-                }
-                checkByteStringIsUtf8(value);
-
-                key_ = value;
+      public Builder mergeFrom(com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader other) {
+        if (other == com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.getDefaultInstance()) return this;
+        if (!other.getKey().isEmpty()) {
+          key_ = other.key_;
+          onChanged();
+        }
+        if (other.getValue() != com.google.protobuf.ByteString.EMPTY) {
+          setValue(other.getValue());
+        }
         onChanged();
         return this;
       }
 
-            /**
-             * <code>optional string key = 1;</code>
-             */
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b =
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      /**
+       * <code>optional string key = 1;</code>
+       */
       public Builder clearKey() {
 
-          key_ = getDefaultInstance().getKey();
+        key_ = getDefaultInstance().getKey();
         onChanged();
         return this;
       }
 
-            /**
+      /**
+       * <code>optional bytes value = 2;</code>
+       */
+      public com.google.protobuf.ByteString getValue() {
+        return value_;
+      }
+
+      /**
        * <code>optional bytes value = 2;</code>
        */
       public Builder setValue(com.google.protobuf.ByteString value) {
@@ -631,55 +623,46 @@ public final class KafkaMessageHeaderOuterClass {
     throw new NullPointerException();
   }
 
-          value_ = value;
-          onChanged();
-          return this;
+        value_ = value;
+        onChanged();
+        return this;
       }
 
-            /**
-             * <code>optional bytes value = 2;</code>
-             */
-            public Builder clearValue() {
+      /**
+       * <code>optional bytes value = 2;</code>
+       */
+      public Builder clearValue() {
 
-                value_ = getDefaultInstance().getValue();
-                onChanged();
-                return this;
-            }
+        value_ = getDefaultInstance().getValue();
+        onChanged();
+        return this;
+      }
 
-            private com.google.protobuf.ByteString value_ = com.google.protobuf.ByteString.EMPTY;
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
 
-            /**
-             * <code>optional bytes value = 2;</code>
-             */
-            public com.google.protobuf.ByteString getValue() {
-                return value_;
-            }
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return this;
+      }
 
-            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internalGetFieldAccessorTable() {
-                return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_fieldAccessorTable
-                        .ensureFieldAccessorsInitialized(
-                                com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.class, com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.Builder.class);
-            }
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.internal_static_KafkaMessageHeader_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.class, com.wine.to.up.recommendation.service.api.message.KafkaMessageHeaderOuterClass.KafkaMessageHeader.Builder.class);
+      }
 
-            private void maybeForceBuilderInitialization() {
-                if (com.google.protobuf.GeneratedMessageV3
-                        .alwaysUseFieldBuilders) {
-                }
-            }
-
-            public final Builder setUnknownFields(
-                    final com.google.protobuf.UnknownFieldSet unknownFields) {
-                return this;
-            }
-
-            public final Builder mergeUnknownFields(
-                    final com.google.protobuf.UnknownFieldSet unknownFields) {
-                return this;
-            }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
 
 
-            // @@protoc_insertion_point(builder_scope:KafkaMessageHeader)
+      // @@protoc_insertion_point(builder_scope:KafkaMessageHeader)
     }
 
   }

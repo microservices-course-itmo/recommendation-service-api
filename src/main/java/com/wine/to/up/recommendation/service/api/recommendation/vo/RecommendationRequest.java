@@ -8,7 +8,7 @@ import lombok.Getter;
 @Getter
 @Builder(builderClassName = "Builder")
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class RecommendationRequest {
+public final class RecommendationRequest {
     private final Long id;
 
     public static final class Builder {

@@ -6,8 +6,8 @@ import lombok.Getter;
 import java.util.List;
 
 /**
- * @version 1.1
- * @author Roman
+ * @version 0.3.1
+ * @author Vladimir Vovk
  */
 @Getter
 @Builder(builderClassName = "Builder")

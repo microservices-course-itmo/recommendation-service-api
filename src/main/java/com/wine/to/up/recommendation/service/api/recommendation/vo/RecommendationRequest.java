@@ -4,8 +4,8 @@ import lombok.Builder;
 import lombok.Getter;
 
 /**
- * @version 1.1
- * @author Alexander
+ * @version 0.3.1
+ * @author Ilya
  */
 @Getter
 @Builder(builderClassName = "Builder")
